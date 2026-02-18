@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaCat, FaDiscord, FaGithub, FaHackerNews, FaTimes, FaTwitter } from 'react-icons/fa';
 
 import { DISCORD_USER } from "@/constants";
 import DiscordCopyButton from "./toast";
@@ -30,6 +30,16 @@ export default function Home() {
                         href="https://discord.com/oauth2/authorize?client_id=1433960923818754160"
                         text="Yomu - Discord Bot"
                         icon={<FaDiscord className="h-5 w-5" />}
+                    />
+                    <LinkButton
+                        href="https://www.yomu.lat"
+                        text="Yomu - Anime News Portal"
+                        icon={<FaHackerNews className="h-5 w-5" />}
+                    />
+                    <LinkButton
+                        href="https://www.nekolist.xyz/"
+                        text="NekoList - Manhwa Tracking Service"
+                        icon={<FaCat className="h-5 w-5" />}
                     />
                 </div>
                 <div className="flex flex-col gap-2 w-full">
