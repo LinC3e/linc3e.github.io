@@ -32,12 +32,12 @@ export default function Home() {
                         icon={<FaDiscord className="h-5 w-5" />}
                     />
                     <LinkButton
-                        href="https://www.yomu.lat"
+                        href="https://yomu-lat.onrender.com"
                         text="Yomu - Anime News Portal"
                         icon={<FaHackerNews className="h-5 w-5" />}
                     />
                     <LinkButton
-                        href="https://www.nekolist.xyz/"
+                        href="https://nekolist-nextjs.vercel.app/"
                         text="NekoList - Manhwa Tracking Service"
                         icon={<FaCat className="h-5 w-5" />}
                     />
