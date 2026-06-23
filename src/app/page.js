@@ -1,15 +1,15 @@
 import React from "react";
 import Link from "next/link";
-import { FaCat, FaDiscord, FaGithub, FaHackerNews, FaTimes, FaTwitter } from 'react-icons/fa';
+import { FaCat, FaDiscord, FaGithub, FaHackerNews, FaLink, FaTimes, FaTwitter } from 'react-icons/fa';
 
 import { DISCORD_USER } from "@/constants";
 import DiscordCopyButton from "./toast";
 
 export default function Home() {
     return (
-        <main className="flex flex-col items-center justify-start px-4 py-12 relative">
+        <main className="flex flex-col items-center justify-start px-4 py-12 relative ">
             <div className="w-full max-w-sm flex flex-col gap-8">
-                <div className="flex flex-col gap-2 items-center justify-center text-center relative">
+                <div className="flex flex-col gap-2 items-center justify-center text-center relative ">
                     <img
                         className="w-full rounded-xl object-center object-cover -mb-12"
                         src={'banner.jpg'}
@@ -20,7 +20,7 @@ export default function Home() {
                     />
                     <h1 className="text-2xl font-bold mt-2">LinC3e</h1>
                     <p className="text-gray-600 dark:text-gray-400 text-sm">
-                        Hey! I'm LinC3e, a Full Stack web developer.
+                        Hey! I'm <span className="font-bold text-pink-400">LinC3e</span>, a Full Stack Developer.<br />
                         Here are some projects where you can see!
                     </p>
                 </div>
@@ -37,8 +37,13 @@ export default function Home() {
                         icon={<FaHackerNews className="h-5 w-5" />}
                     />
                     <LinkButton
-                        href="https://nekolist-nextjs.vercel.app/"
-                        text="NekoList - Manhwa Tracking Service"
+                        href="https://kya-plum.vercel.app/"
+                        text="Kya Links - Fast and simple URL shortener"
+                        icon={<FaLink className="h-5 w-5" />}
+                    />
+                    <LinkButton
+                        href="https://github.com/nekolist-app/nekolist-public"
+                        text="NekoList - Manhwa Organizer Service"
                         icon={<FaCat className="h-5 w-5" />}
                     />
                 </div>
