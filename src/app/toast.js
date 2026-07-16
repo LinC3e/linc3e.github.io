@@ -22,7 +22,7 @@ export default function DiscordCopyButton() {
             {/* Botón con icono */}
             <button
                 onClick={handleCopy}
-                className="flex items-center gap-2 px-4 py-2 text-white hover:text-orange-500 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
+                className="flex items-center gap-2 px-4 py-2 text-white hover:text-pink-500 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
                 title="Copiar username de Discord"
             >
                 <FaDiscord className="h-5 w-5" />

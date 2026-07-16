@@ -47,6 +47,22 @@ export default function Home() {
                         icon={<FaCat className="h-5 w-5" />}
                     />
                 </div>
+
+                <div className="flex flex-col gap-3 w-full">
+                    <h2 className="text-xl font-bold">Currently Vibing</h2>
+                    <iframe
+                        data-testid="embed-iframe"
+                        style={{ borderRadius: "12px" }}
+                        src="https://open.spotify.com/embed/track/4qQTqlOWCftZYufh9uUzO9?utm_source=generator&theme=0&si=6708a823a6074c47"
+                        width="100%"
+                        height="152"
+                        frameBorder="0"
+                        allowFullScreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+
                 <div className="flex flex-col gap-2 w-full">
                     <h2 className="text-xl font-bold">Donate</h2>
                     <LinkButton
@@ -103,7 +119,7 @@ function LinkButton({ href, icon, text }) {
 function IconButton({ icon, href }) {
     return (
         <Link
-            className="hover:scale-105 transition-all hover:text-orange-500"
+            className="hover:scale-105 transition-all hover:text-pink-500"
             href={href}
             target="_blank"
         >
